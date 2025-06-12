@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, ScrollView} from 'react-native';
-import Basics from './Src/components/Basics';
-import TextInputComponent from './Src/components/TextInput';
-import ScrollViewComponent from './Src/components/ScrollView'
+import Basics from './src/components/Basics';
+import TextInputComponent from './src/components/TextInput';
+import ScrollViewComponent from './src/components/ScrollView'
 
 
 function App(): React.JSX.Element {
   
   return (
     <View style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollViewContent}>
+      <ScrollView 
+      nestedScrollEnabled = {true}
+      contentContainerStyle={styles.scrollViewContent}>
       <Basics/>
       <TextInputComponent/>
       <ScrollViewComponent/>
