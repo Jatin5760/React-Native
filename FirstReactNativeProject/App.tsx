@@ -4,11 +4,20 @@ import { View, Text, StyleSheet } from 'react-native';
 function App(): React.JSX.Element {
   return (
     <View style={styles.container}>
+
+      {/* View Component */}
       <View style={styles.boxContainer}>
         <View style={styles.redBox}/>
         <View style={styles.blueBox}/>
         <View style={styles.greenBox}/>
       </View>
+
+      {/* Text Component */}
+      <Text style={styles.mainText}>My First App</Text>
+      <Text style={styles.nestedText}>
+        Text Component can be <Text style={styles.bold}>Nested</Text>
+      </Text>
+
     </View>
   );
 }
@@ -35,6 +44,15 @@ const styles = StyleSheet.create({
     width:50,
     height:50,
     backgroundColor:'green'
+  },
+  mainText: {
+    fontSize: 40
+  },
+  nestedText: {
+    fontSize: 20
+  },
+  bold: {
+    fontWeight: 'bold'
   }
 });
 
