@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image, Button } from 'react-native';
 
 function App(): React.JSX.Element {
+  const [count, setCount] = useState<number>(0);
   return (
     <View style={styles.container}>
 
@@ -23,7 +24,11 @@ function App(): React.JSX.Element {
       </Image>
 
       {/* Button Component */}
-      <Button title = "Click Me"/>
+      <Button
+       color={'red'}
+      //  disabled = {true}
+       title = "Click Me" onPress = {()=>setCount(count+1)}/>
+      <Text>Count is {count}</Text>
     </View>
   );
 }
