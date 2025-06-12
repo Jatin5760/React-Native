@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { View, StyleSheet, ScrollView} from 'react-native';
 import Basics from './src/components/Basics';
 import TextInputComponent from './src/components/TextInput';
-import ScrollViewComponent from './src/components/ScrollView'
+import ScrollViewComponent from './src/components/ScrollView';
+import Styling from './src/components/Styling';
 
 
 function App(): React.JSX.Element {
@@ -15,6 +16,7 @@ function App(): React.JSX.Element {
       <Basics/>
       <TextInputComponent/>
       <ScrollViewComponent/>
+      <Styling/>
       </ScrollView>
     </View>
   );
