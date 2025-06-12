@@ -4,6 +4,9 @@ import { StyleSheet, Text, TextInput, View } from "react-native";
 function TextInputComponent() {
     const [value, setValue] = useState('')
 
+    console.log(value);
+    
+
     return (  
         <View style={styles.container}>
             <Text style={styles.headerText}>Text Input Component</Text>
