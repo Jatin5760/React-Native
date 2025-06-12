@@ -21,6 +21,16 @@ function Basics() {
       {/* Image Component */}
       <Image style={styles.image} source={require('../../Assets/Project1.png')}>
       </Image>
+      <Image style={styles.image} source={require('../../Assets/Project1.png')}>
+      </Image>
+      <Image style={styles.image} source={require('../../Assets/Project1.png')}>
+      </Image>
+      <Image style={styles.image} source={require('../../Assets/Project1.png')}>
+      </Image>
+      <Image style={styles.image} source={require('../../Assets/Project1.png')}>
+      </Image><Image style={styles.image} source={require('../../Assets/Project1.png')}>
+      </Image><Image style={styles.image} source={require('../../Assets/Project1.png')}>
+      </Image>
 
       {/* Button Component */}
       <Button
