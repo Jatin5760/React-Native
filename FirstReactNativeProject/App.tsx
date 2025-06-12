@@ -4,22 +4,38 @@ import { View, Text, StyleSheet } from 'react-native';
 function App(): React.JSX.Element {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Hello World</Text>
+      <View style={styles.boxContainer}>
+        <View style={styles.redBox}/>
+        <View style={styles.blueBox}/>
+        <View style={styles.greenBox}/>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
+  container :{
+    marginBottom:20,
   },
-  text: {
-    fontSize: 24,
-    fontWeight: 'bold',
+  boxContainer:{
+    flexDirection:'row',
+    justifyContent: 'space-around'
   },
+  redBox: {
+    width:50,
+    height:50,
+    backgroundColor:'red'
+  },
+  blueBox: {
+    width:50,
+    height:50,
+    backgroundColor:'blue'
+  },
+  greenBox :{
+    width:50,
+    height:50,
+    backgroundColor:'green'
+  }
 });
 
 export default App;
