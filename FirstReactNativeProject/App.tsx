@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, Button } from 'react-native';
 
 function App(): React.JSX.Element {
   return (
@@ -19,10 +19,11 @@ function App(): React.JSX.Element {
       </Text>
 
       {/* Image Component */}
-      <Image style={styles.image} source={}>
-
+      <Image style={styles.image} source={require('./Assets/Project1.png')}>
       </Image>
 
+      {/* Button Component */}
+      <Button title = "Click Me"/>
     </View>
   );
 }
