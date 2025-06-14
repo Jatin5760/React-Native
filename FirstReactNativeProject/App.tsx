@@ -5,6 +5,7 @@ import TextInputComponent from './src/components/TextInput';
 import ScrollViewComponent from './src/components/ScrollView';
 import Styling from './src/components/Styling';
 import Flexlayout from './src/components/Flexlayout';
+import Touchable from './src/components/Touchable';
 
 
 function App(): React.JSX.Element {
@@ -19,6 +20,7 @@ function App(): React.JSX.Element {
       <ScrollViewComponent/>
       <Styling/>
       <Flexlayout/>
+      <Touchable/>
       </ScrollView>
     </View>
   );
