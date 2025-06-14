@@ -30,7 +30,6 @@ const Styling = () => {
             <Text style={[styles.combinedText, {textDecorationLine:'underline', color:'red', fontWeight:'bold'}]}>Combined Text Style with different colour</Text>
             <Text style={[styles.combinedText, {textDecorationLine:'underline'}]}>Combined Text Style with different colour</Text>
         </View>
-
     </View>
   );
 };
